@@ -4,7 +4,7 @@ import firebase from 'firebase';
 import { LinearGradient } from 'expo-linear-gradient';
 import { auth } from '../Services/firebase';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MainNavigator } from '../App';
 import FirstLoginScreen from './firstLogin';
 
@@ -300,7 +300,7 @@ const styles = StyleSheet.create({
 });
 
 const AppNavigator = () => {
-  const Stack = createStackNavigator();
+  const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator initialRouteName="Auth" screenOptions={{ headerShown: false }}>

@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import firebase from 'firebase';
 import { MainNavigator } from '../App';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function FirstLoginScreen({ navigation }) {
   const [selectedPreferences, setSelectedPreferences] = useState([]);
@@ -154,7 +154,7 @@ function FirstLoginScreen({ navigation }) {
 }
 
 const AppNavigator = () => {
-  const Stack = createStackNavigator();
+  const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator initialRouteName="FirstLogin" screenOptions={{ headerShown: false }}>

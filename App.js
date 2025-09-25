@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon2 from 'react-native-vector-icons/Ionicons';
 import { View, Text, TouchableOpacity, StyleSheet, Animated, Image } from 'react-native';
@@ -15,7 +15,7 @@ import AuthScreen from './screens/signup';
 
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 const CustomTabBarButton = ({ children, onPress }) => (
   <TouchableOpacity style={styles.tabBarButton} onPress={onPress}>
