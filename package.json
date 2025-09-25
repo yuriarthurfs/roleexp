@@ -21,7 +21,6 @@
     "react-navigation": "^4.4.4",
     "expo-image-picker": "~15.0.7",
     "react-native-maps": "1.14.0",
-    "styled-components": "^5.3.11",
     "@expo/vector-icons": "^14.0.3",
     "react-native-modal": "^13.0.1",
     "react-native-paper": "4.9.2",
